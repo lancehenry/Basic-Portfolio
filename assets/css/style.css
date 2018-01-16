@@ -8,7 +8,7 @@ html, body {
 
 #wrapper {
 	min-height: 100%;
-	margin-bottom: 75px; */
+	margin-bottom: 300px;
 	position: relative;
 }
 
@@ -131,6 +131,16 @@ PORTFOLIO PAGE STYLES
 	float: left;
 	position: relative;
 	padding: 40px 30px 40px 30px;
+}
+
+.img-left {
+	float: left;
+	padding-bottom: 26px;
+}
+
+.img-right {
+	float: right;
+	padding-bottom: 26px;
 }
 
 /***************************************
