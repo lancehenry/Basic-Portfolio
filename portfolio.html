@@ -10,16 +10,20 @@
 
 <body>
 
-<div id="wrapper">
+<!-- WRAPS ENTIRE PAGE // FLEXBOX FOOTER RELATED -->	
+
+<div class="wrapper">
 
 <!-- MAIN NAVIGATION BAR -->
 	
-	<header class="main-nav">
+	<header>
 		<div class="inside-box">
 			<h1>Lance Schmittling</h1>
 				<ul>
 					<li><a href="contact.html">Contact</a></li>
+					<div class="line"></div>
 					<li><a href="portfolio.html">Portfolio</a></li>
+					<div class="line"></div>
 					<li><a href="index.html">About</a></li>	
 				</ul>
 		</div>
@@ -27,7 +31,7 @@
 
 <!-- MAIN CONTENT SECTION -->
 
-	<section class="entire-content-area">
+	<section class="content-area">
 
 <!-- PORTFOLIO SECTION // FLOAT LEFT -->
 
@@ -35,12 +39,31 @@
 			<h2>Portfolio</h2>
 			<br><hr><br>
 
-			<img class="img-left" width="282px" src="assets/images/portfolio/img-1.jpg" alt="img-1">
-			<img class="img-right" width="282px" src="assets/images/portfolio/img-2.jpg" alt="img-2">
-			<img class="img-left" width="282px" src="assets/images/portfolio/img-3.jpg" alt="img-3">
-			<img class="img-right" width="282px" src="assets/images/portfolio/img-4.jpg" alt="img-4">
-			<img class="img-left" width="282px" src="assets/images/portfolio/img-5.jpg" alt="img-5">
+			<div class="img-topleft">
+				<img width="282px" src="assets/images/portfolio/img-1.jpg" alt="img-1">
+				<div class="img-topleft-text">Sunset Sky</div>
+			</div>
+
+			<div class="img-topright">
+				<img width="282px" src="assets/images/portfolio/img-2.jpg" alt="img-2">
+				<div class="img-topright-text">Mountains</div>
+			</div>
+
+			<div class="img-midleft">
+				<img width="282px" src="assets/images/portfolio/img-3.jpg" alt="img-3">
+				<div class="img-midleft-text">Snowy Trees</div>
+			</div>
+
+			<div class="img-midright">
+				<img width="282px" src="assets/images/portfolio/img-4.jpg" alt="img-4">
+				<div class="img-midright-text">Cloud Cover</div>
+			</div>
 			
+			<div class="img-botleft">
+				<img width="282px" src="assets/images/portfolio/img-5.jpg" alt="img-1">
+				<div class="img-botleft-text">Mountain Top</div>
+			</div>
+
 		</section>
 
 <!-- CONNECT WITH ME SECTION // FLOAT RIGHT -->
@@ -55,18 +78,15 @@
 			</div>
 		</section>
 	</section>
-</div>
 
-<!-- FOOTER RELATED "PUSH" CLASS -->	
-
-<div class="push"></div>
-
-	<footer class="footer">
-		<p>Copyright &copy; 2018 Lance Schmittling</p>
-	</footer>
 
 <!-- FOOTER SECTION -->
-	
+
+	<footer>
+		<p>Copyright &copy; 2018 Lance Schmittling</p>
+	</footer>
+</div>
+
 </body>
 
 </html>
