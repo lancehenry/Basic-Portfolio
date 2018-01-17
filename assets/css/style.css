@@ -22,7 +22,7 @@ HEADING TAGS
 
 h1 {
 	width: 300px;
-	height: 50px;
+	height: 75px;
 	float: left;
 	position: absolute;
 	background-color: #4aaaa5;
@@ -32,6 +32,7 @@ h1 {
 	color: #ffffff;
 	text-align: center;
 	padding-top: 25px;
+	box-sizing: border-box; /* BOX SIZE ISN'T AFFECTED BY PADDING OR BORDER */
 }
 
 h2 {
@@ -48,6 +49,20 @@ h3 {
 	font-weight: bold;
 }
 
+h4 {
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 21px;
+	padding-top: 17px;
+	position: absolute;
+	background-color: #4aaaa5;
+	height: 50px;
+	width: 100%;
+	box-sizing: border-box; /* BOX SIZE ISN'T AFFECTED BY PADDING OR BORDER */
+}
+
 /***************************************
 NAVIGATION
 ***************************************/
@@ -58,34 +73,33 @@ header {
 	position: absolute;
 	background-color: #ffffff;
 	border-bottom: #cccccc 2px solid;
+	box-sizing: border-box; /* BOX SIZE ISN'T AFFECTED BY PADDING OR BORDER */
+	z-index: 2;
 }
 
-.inside-box {
-	display: block;
+.nav-container {
 	width: 960px;
 	margin: auto;
 }
 
-li {
-	display: block;
-    float: right;
-    text-align: center;
+.nav {
+	margin-top: 30px;
+	float:right;
 }
 
-li a {
-    display: block;
-    color: #666666;
-    text-align: center;
-    padding: 30px 0px 30px 16px;
-    text-decoration: none;
+.nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: #666666;
+	margin: 0 16px 0 16px;
 }
 
-.line {
-	height: 20px;
-	float: right;
-	border-right: 1px solid #666666;
-	margin-top: 27px;
-	margin-left: 16px;
+.nav a:hover {
+	color: #4aaaa5;
+}
+
+.nav a:nth-child(3) {
+	margin-right: 0;
 }
 
 /***************************************
@@ -100,20 +114,24 @@ MAIN CONTENT AREA
 	padding-top: 100px;
 	padding-bottom: 100px;
 	position: relative;
+	box-sizing: border-box; /* BOX SIZE ISN'T AFFECTED BY PADDING OR BORDER */
 }
 
 .about-me {
 	background-color: white;
 	border: #cccccc 1px solid;
-	width: 590px;
+	width: 650px;
 	float: left;
 	position: relative;
 	padding: 40px 30px 40px 30px;
+	box-sizing: border-box; /* BOX SIZE ISN'T AFFECTED BY PADDING OR BORDER */
 }
 
 .profile-img {
 	float: left;
-	padding: 0px 30px 30px 0;
+	width: 280px;
+	padding: 5px 30px 20px 0;
+	box-sizing: border-box; /* BOX SIZE ISN'T AFFECTED BY PADDING OR BORDER */
 }
 
 .line-spacing {
@@ -123,10 +141,21 @@ MAIN CONTENT AREA
 .connect-with-me {
 	background-color: white;
 	border: #cccccc 1px solid;
-	width: 210px;
+	width: 270px;
 	float: right;
 	position: relative;
 	padding: 40px 30px 40px 30px;
+	box-sizing: border-box; /* BOX SIZE ISN'T AFFECTED BY PADDING OR BORDER */
+}
+
+.social-icons a {
+	width: 64px;
+	display: inline-block;
+	margin-right: 3px;
+}
+
+.social-icons a:nth-child(3) {
+	margin-right: 0;
 }
 
 /***************************************
@@ -136,10 +165,11 @@ PORTFOLIO PAGE STYLES
 .portfolio {
 	background-color: white;
 	border: #cccccc 1px solid;
-	width: 590px;
+	width: 650px;
 	float: left;
 	position: relative;
 	padding: 40px 30px 40px 30px;
+	box-sizing: border-box; /* BOX SIZE ISN'T AFFECTED BY PADDING OR BORDER */
 }
 
 .img-topleft {
@@ -150,38 +180,12 @@ PORTFOLIO PAGE STYLES
 	color: #ffffff;
 }
 
-.img-topleft-text {
-	position: absolute;
-	top: 65%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	font-size: 21px;
-	padding-top: 17px;
-	background-color: #4aaaa5;
-	height: 35px;
-	width: 100%;
-}
-
 .img-topright {
 	float: right;
 	padding-bottom: 26px;
 	position: relative;
 	text-align: center;
 	color: #ffffff;
-}
-
-.img-topright-text {
-	position: absolute;
-	top: 65%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	font-size: 21px;
-	padding-top: 17px;
-	background-color: #4aaaa5;
-	height: 35px;
-	width: 100%;
 }
 
 .img-midleft {
@@ -192,38 +196,12 @@ PORTFOLIO PAGE STYLES
 	color: #ffffff;
 }
 
-.img-midleft-text {
-	position: absolute;
-	top: 65%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	font-size: 21px;
-	padding-top: 17px;
-	background-color: #4aaaa5;
-	height: 35px;
-	width: 100%;
-}
-
 .img-midright {
 	float: right;
 	padding-bottom: 26px;
 	position: relative;
 	text-align: center;
 	color: #ffffff;
-}
-
-.img-midright-text {
-	position: absolute;
-	top: 65%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	font-size: 21px;
-	padding-top: 17px;
-	background-color: #4aaaa5;
-	height: 35px;
-	width: 100%;
 }
 
 .img-botleft {
@@ -234,19 +212,6 @@ PORTFOLIO PAGE STYLES
 	color: #ffffff;
 }
 
-.img-botleft-text {
-	position: absolute;
-	top: 65%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	font-size: 21px;
-	padding-top: 17px;
-	background-color: #4aaaa5;
-	height: 35px;
-	width: 100%;
-}
-
 /***************************************
 CONTACT FORM
 ***************************************/
@@ -254,25 +219,28 @@ CONTACT FORM
 .contact-me {
 	background-color: white;
 	border: #cccccc 1px solid;
-	width: 590px;
+	width: 650px;
 	float: left;
 	position: relative;
 	padding: 40px 30px 40px 30px;
+	box-sizing: border-box; /* BOX SIZE ISN'T AFFECTED BY PADDING OR BORDER */
 }
 
 input[type=text], input[type=email] {
-	width: 98%;
+	width: 100%;
 	height: 30px;
 	padding-left: 10px;
 	margin-top: 8px;
 	border: #cccccc .5px solid;
+	box-sizing: border-box; /* BOX SIZE ISN'T AFFECTED BY PADDING OR BORDER */
 }
 
 textarea {
-	width: 99%;
+	width: 100%;
 	height: 200px;
 	margin-top: 8px;
 	border: #cccccc .5px solid;
+	box-sizing: border-box; /* BOX SIZE ISN'T AFFECTED BY PADDING OR BORDER */
 }
 
 .user-mail {
@@ -302,11 +270,12 @@ FOOTER
 
 footer {
 	width: 100%;
-	height: 25px;
+	height: 75px;
 	color: #cccccc;
 	background-color: #666666;
 	font-size: 13px;
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 40px;
 	border-top: #4aaaa5 7px solid;
+	box-sizing: border-box; /* BOX SIZE ISN'T AFFECTED BY PADDING OR BORDER */
 }
