@@ -61,6 +61,7 @@ header {
 }
 
 .inside-box {
+	display: block;
 	width: 960px;
 	margin: auto;
 }
@@ -75,12 +76,8 @@ li a {
     display: block;
     color: #666666;
     text-align: center;
-    padding: 30px 16px;
+    padding: 30px 0px 30px 16px;
     text-decoration: none;
-}
-
-li a:hover {
-	color: #4aaaa5;
 }
 
 .line {
@@ -88,6 +85,7 @@ li a:hover {
 	float: right;
 	border-right: 1px solid #666666;
 	margin-top: 27px;
+	margin-left: 16px;
 }
 
 /***************************************
