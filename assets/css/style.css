@@ -57,6 +57,8 @@ h4 {
 	font-size: 21px;
 	padding-top: 17px;
 	position: absolute;
+	color: #ffffff;
+	text-align: center;
 	background-color: #4aaaa5;
 	height: 50px;
 	width: 100%;
@@ -176,40 +178,30 @@ PORTFOLIO PAGE STYLES
 	float: left;
 	padding-bottom: 26px;
 	position: relative;
-	text-align: center;
-	color: #ffffff;
 }
 
 .img-topright {
 	float: right;
 	padding-bottom: 26px;
 	position: relative;
-	text-align: center;
-	color: #ffffff;
 }
 
 .img-midleft {
 	float: left;
 	padding-bottom: 26px;
 	position: relative;
-	text-align: center;
-	color: #ffffff;
 }
 
 .img-midright {
 	float: right;
 	padding-bottom: 26px;
 	position: relative;
-	text-align: center;
-	color: #ffffff;
 }
 
 .img-botleft {
 	float: left;
 	padding-bottom: 26px;
 	position: relative;
-	text-align: center;
-	color: #ffffff;
 }
 
 /***************************************
