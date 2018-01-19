@@ -174,32 +174,14 @@ PORTFOLIO PAGE STYLES
 	box-sizing: border-box; /* BOX SIZE ISN'T AFFECTED BY PADDING OR BORDER */
 }
 
-.img-topleft {
+.imgs-left {
 	float: left;
 	padding-bottom: 26px;
 	position: relative;
 }
 
-.img-topright {
+.imgs-right {
 	float: right;
-	padding-bottom: 26px;
-	position: relative;
-}
-
-.img-midleft {
-	float: left;
-	padding-bottom: 26px;
-	position: relative;
-}
-
-.img-midright {
-	float: right;
-	padding-bottom: 26px;
-	position: relative;
-}
-
-.img-botleft {
-	float: left;
 	padding-bottom: 26px;
 	position: relative;
 }
